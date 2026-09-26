@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cristian Pablo Portillo Rios | CV Profesional</title>
+
+    <!-- SEO & Open Graph para fuerte impacto al compartir el link -->
+    <meta name="description"
+        content="CV de Cristian Pablo Portillo Rios. Fusión de rigurosidad operativa industrial y desarrollo de software / análisis de datos.">
+    <meta property="og:title" content="Cristian Pablo Portillo Rios | CV Profesional">
+    <meta property="og:description" content="Fusión estratégica entre Ingeniería de Procesos y Desarrollo de Software.">
+    <meta property="og:image" content="assets/img/og-image.webp">
+    <meta property="og:type" content="profile">
+
+    <!-- Favicons organizados en su carpeta -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="shortcut icon" href="favicons/favicon.ico">
+
+    <!-- Estilos Principales -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Estilos Exclusivos para Exportación a PDF / Impresión -->
+    <link rel="stylesheet" href="css/print.css" media="print">
+</head>
+
+<body>
+
+    <!-- Barra de Controles Globales -->
+    <nav class="global-controls" aria-label="Navegación y controles superiores">
+        <div class="global-controls__brand">
+            <span class="global-controls__title">CV Online</span>
+        </div>
+
+        <div class="global-controls__actions">
+            <!-- Botón de Descarga PDF -->
+            <a href="assets/cv/cv-cristian-portillo.pdf" download="CV_Cristian_Portillo.pdf" class="btn-control"
+                id="download-pdf" title="Descargar CV en PDF">
+                <img src="icons/descarga.svg" alt="Icono Descargar" class="icon-btn icon--black">
+                <span class="btn-text">Descargar PDF</span>
+            </a>
+
+            <!-- Botón de Cambio de Tema -->
+            <button class="btn-control" id="theme-toggle" title="Cambiar tema visual" aria-live="polite">
+                <img src="icons/theme-light.svg" alt="Icono Modo Claro" class="icon-btn icon--black" id="theme-icon">
+            </button>
+        </div>
+    </nav>
+
+    <!-- Contenedor general del CV -->
+    <main class="cv-container">
+        <!-- Cabecera Principal del CV -->
+        <header class="header">
+            <div class="header__brand">
+                <img src="icons/CppR-Programmer.svg" alt="Logo CppR-Programmer" class="header__logo-img">
+            </div>
+
+            <div class="header__profile-container">
+                <!-- Tu Foto de Perfil -->
+                <div class="header__avatar-wrapper">
+                    <img src="assets/img/perfil.webp" alt="Foto de perfil de Cristian Pablo Portillo Rios"
+                        class="header__avatar">
+                </div>
+
+                <div class="header__identity">
+                    <!-- Información de Identidad -->
+                    <h1 class="header__name">Cristian Pablo Portillo Rios</h1>
+                    <p class="header__title">Técnico en Industrias de Procesos &amp; Desarrollador de Software</p>
+                    <p class="header__tagline">Fusión estratégica entre Rigurosidad Operativa Industrial (OT) y
+                        Capacidad
+                        Analítica (IT)</p>
+                </div>
+            </div>
+
+            <!-- Bloque de Contacto y Enlaces -->
+            <address class="contact">
+                <ul class="contact__list">
+                    <!-- Ubicación -->
+                    <li class="contact__item">
+                        <img src="icons/map-pin.svg" alt="" class="contact__icon icon--black" aria-hidden="true">
+                        <span class="contact__text">CABA, Recoleta</span>
+                    </li>
+                    <!-- Correo -->
+                    <li class="contact__item">
+                        <a href="mailto:cppr89@gmail.com" class="contact__link" title="Enviar un correo electrónico">
+                            <img src="icons/mail.svg" alt="" class="contact__icon icon--black" aria-hidden="true">
+                            <span class="contact__text">cppr89@gmail.com</span>
+                        </a>
+                    </li>
+                    <!-- WhatsApp (Principal) -->
+                    <li class="contact__item">
+                        <a href="https://wa.me/541161459700" target="_blank" rel="noopener noreferrer"
+                            class="contact__link" title="Contactar por WhatsApp">
+                            <img src="icons/whatsapp.svg" alt="" class="contact__icon icon--native" aria-hidden="true">
+                            <span class="contact__text">11-6145-9700 <small>(Principal)</small></span>
+                        </a>
+                    </li>
+                    <!-- Teléfono (Llamadas alternativo) -->
+                    <li class="contact__item">
+                        <a href="tel:+5491156156693" class="contact__link" title="Llamar al teléfono alternativo">
+                            <img src="icons/phone.svg" alt="" class="contact__icon icon--black" aria-hidden="true">
+                            <span class="contact__text">11-5615-6693 <small>(Llamadas)</small></span>
+                        </a>
+                    </li>
+                    <!-- LinkedIn -->
+                    <li class="contact__item">
+                        <a href="https://linkedin.com/in/C-p-p-R" target="_blank" rel="noopener noreferrer"
+                            class="contact__link link__print" title="Perfil de LinkedIn">
+                            <img src="icons/linkedin.svg" alt="" class="contact__icon icon--native" aria-hidden="true">
+                            <span class="contact__text no-print">LinkedIn</span>
+                        </a>
+                    </li>
+                    <!-- GitHub -->
+                    <li class="contact__item">
+                        <a href="https://github.com/CppR-Repo" target="_blank" rel="noopener noreferrer"
+                            class="contact__link link__print" title="Repositorio de GitHub">
+                            <img src="icons/github.svg" alt="" class="contact__icon icon--black" aria-hidden="true">
+                            <span class="contact__text no-print">GitHub</span>
+                        </a>
+                    </li>
+                </ul>
+            </address>
+        </header>
+
+        <!-- Sección: Sobre Mí / Propuesta de Valor -->
+        <section class="section section--about" aria-labelledby="about-heading">
+            <div class="section__header">
+                <h2 id="about-heading" class="section__title">Sobre Mí &amp; Propuesta de Valor</h2>
+                <div class="section__indicator"></div>
+            </div>
+
+            <div class="about-card__content">
+                <p class="about-card__text">
+                    Soy Técnico en Industrias de Procesos (Químico) y Bachiller en Producción de Bienes y Servicios.
+                    Cuento con una sólida trayectoria laboral en entornos operativos, mantenimiento, seguridad y gestión
+                    comercial (ventas), donde consolidé una fuerte orientación al detalle, administración autónoma de
+                    proyectos y un alto estándar de atención al cliente.
+                </p>
+                <p class="about-card__text">
+                    <strong>Desde 2019, expandí mi perfil técnico hacia el sector de la Tecnología Informática (IT),
+                        formándome de manera autodidacta y en academias de primer nivel</strong>. Mi propuesta de valor
+                    se consolida en la fusión de tres mundos: la rigurosidad operativa de las industrias de procesos
+                    (química, petróleo, gas, energía), la capacidad analítica y tecnológica del desarrollo de
+                    software/análisis de datos, y mi sólida experiencia en el área comercial y ventas.
+                </p>
+                <p class="about-card__text">
+                    Mi foco principal está orientado a insertarme firmemente en los sectores de Procesos y tecnología
+                    (IT). Sin bien busco mi primera oportunidad corporativa en estas áreas específicas, aporto proyectos
+                    prácticos desplegados en GitHub y un perfil versátil capaz de aportar valor inmediato tanto en la
+                    ingeniería de soluciones como en la gestión técnica comercial frente al cliente.
+                </p>
+            </div>
+
+            <!-- Banner Visual de Intersección Industrial/IT -->
+            <div class="about-card__badge">
+                <h3 class="about-card__badge-title">Intersección OT / IT</h3>
+                <ul class="about-card__variables">
+                    <li class="about-card__variable-item">
+                        <span class="about-card__variable-name">Variables de Planta</span>
+                        <span class="about-card__variable-tags">Presión · Temperatura · Caudales</span>
+                    </li>
+                    <li class="about-card__variable-item">
+                        <span class="about-card__variable-name">Solución Digital</span>
+                        <span class="about-card__variable-tags">Automatización · Históricos · Interfaces</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sección: Experiencia Laboral -->
+        <section class="section section--experience" aria-labelledby="experience-heading">
+            <div class="section__header">
+                <h2 id="experience-heading" class="section__title">Experiencia Laboral</h2>
+                <div class="section__indicator"></div>
+            </div>
+
+            <div class="timeline">
+                <!-- Rol 1: Pintor Oficial -->
+                <article class="timeline-item">
+                    <div class="timeline-item__meta">
+                        <span class="timeline-item__date">Diciembre 2024 — Actualidad</span>
+                        <span class="timeline-item__company">Trabajo Independiente</span>
+                    </div>
+                    <div class="timeline-item__content">
+                        <h3 class="timeline-item__role">Pintor Oficial de 1ra.</h3>
+                        <p class="timeline-item__description">
+                            Trayectoria de más de 14 años liderando proyectos autónomos de infraestructura. Iniciado en
+                            2012 como actividad independiente paralela y consolidado desde diciembre de 2024 como
+                            actividad principal y exclusiva a tiempo completo. Planificación, presupuestación y
+                            ejecución integral de proyectos de refacción, mantenimiento
+                            general y pintura de alta calidad (estructuras interiores y exteriores). Gestión autónoma de
+                            la cadena de suministro, control de costos, logística de tareas y atención directa al
+                            cliente final, garantizando estándares estrictos de entrega y acabado.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Rol 2: Mantenimiento -->
+                <article class="timeline-item">
+                    <div class="timeline-item__meta">
+                        <span class="timeline-item__date">Julio 2023 — Diciembre 2024</span>
+                        <span class="timeline-item__company">Sindicato del Seguro de la República Argentina</span>
+                    </div>
+                    <div class="timeline-item__content">
+                        <h3 class="timeline-item__role">Técnico de Mantenimiento</h3>
+                        <p class="timeline-item__description">
+                            Ejecución de mantenimiento preventivo y correctivo de infraestructura crítica, garantizando
+                            la continuidad operativa y seguridad de las instalaciones. Inspección técnica y reparación
+                            de sistemas de agua, climatización, luminarias y sanitarios. Gestión y priorización de
+                            reparaciones urgentes, control de stock de insumos técnicos, reporte de incidencias y
+                            coordinación directa con proveedores externos.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Rol 3: Vendedor en Pinturería -->
+                <article class="timeline-item">
+                    <div class="timeline-item__meta">
+                        <span class="timeline-item__date">Junio 2012 — Julio 2023</span>
+                        <span class="timeline-item__company">Centro Pinturería</span>
+                    </div>
+                    <div class="timeline-item__content">
+                        <h3 class="timeline-item__role">Vendedor &amp; Asesor Técnico</h3>
+                        <p class="timeline-item__description">
+                            Atención al público y asesoramiento técnico especializado a empresas constructoras,
+                            contratistas y particulares. Control estricto y reposición de inventario físico. Gestión de
+                            facturación, administración de cuentas corrientes y resolución de requerimientos
+                            comerciales. Coordinación logística de carga/descarga y mantenimiento operativo de la
+                            sucursal.
+                        </p>
+                </article>
+
+                <!-- Rol 4: Seguridad MCM -->
+                <article class="timeline-item">
+                    <div class="timeline-item__meta">
+                        <span class="timeline-item__date">Febrero 2011 — Mayo 2012</span>
+                        <span class="timeline-item__company">MCM Security S.R.L.</span>
+                    </div>
+                    <div class="timeline-item__content">
+                        <h3 class="timeline-item__role">Profesional de Seguridad &amp; Supervisor</h3>
+                        <p class="timeline-item__description">
+                            Coordinación, supervisión y asignación de tareas operativas para el personal a cargo.
+                            Ejecución de protocolos estrictos de custodia, control de accesos y vigilancia activa en
+                            puestos fijos industriales y corporativos.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Rol 5: Vigilador Tech Security -->
+                <article class="timeline-item">
+                    <div class="timeline-item__meta">
+                        <span class="timeline-item__date">Diciembre 2009 — Febrero 2011</span>
+                        <span class="timeline-item__company">Tech Security SOCIE</span>
+                    </div>
+                    <div class="timeline-item__content">
+                        <h3 class="timeline-item__role">Vigilador Operativo</h3>
+                        <p class="timeline-item__description">
+                            Tareas de prevención, control perimetral y preservación de la seguridad física de activos e
+                            instalaciones. Cumplimiento riguroso de normativas y reportes operativos diarios.
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Sección: Formación Académica & Certificaciones -->
+        <section class="section section--education" aria-labelledby="education-heading">
+            <div class="section__header">
+                <h2 id="education-heading" class="section__title">Formación Académica &amp; Certificaciones</h2>
+                <div class="section__indicator"></div>
+            </div>
+
+            <div class="education-grid">
+                <!-- Bloque 1: Educación Formal -->
+                <div class="education-card">
+                    <h3 class="education-card__category">Formación Base e Industrial</h3>
+                    <div class="education-card__item">
+                        <span class="education-card__date">Título Técnico</span>
+                        <h4 class="education-card__title">Técnico en Industrias de Procesos (Químico)</h4>
+                        <p class="education-card__institution">Escuela de Educación Secundaria Técnica Nº5 "Roberto
+                            Noble"</p>
+                        <p class="education-card__meta">Bachiller en Producción de Bienes y Servicios</p>
+                    </div>
+                </div>
+
+                <!-- Bloque 2: Academias IT Especializadas -->
+                <div class="education-card">
+                    <h3 class="education-card__category">Especialización en Desarrollo &amp; Datos</h3>
+                    <ul class="education-card__list">
+                        <li class="education-card__list-item">
+                            <strong>Talento Tech:</strong> Data Analyst · Figma
+                        </li>
+                        <li class="education-card__list-item">
+                            <strong>Codo a Codo 4.0:</strong> Full Stack Python · Django
+                        </li>
+                        <li class="education-card__list-item">
+                            <strong>Autodidacta Avanzado:</strong> React.js
+                        </li>
+                        <li class="education-card__list-item">
+                            <strong>SoloLearn:</strong> Certificaciones en HTML · CSS · JavaScript · Angular · Python ·
+                            SQL · Java
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Bloque 3: Formación Ejecutiva y Productividad -->
+                <div class="education-card">
+                    <h3 class="education-card__category">Santander Open Academy &amp; Destrezas</h3>
+                    <ul class="education-card__list">
+                        <li class="education-card__list-item">Introducción a la Ciencia de Datos</li>
+                        <li class="education-card__list-item">Copilot &amp; Fundamentos de ChatGPT</li>
+                        <li class="education-card__list-item">Google Inteligencia Artificial y Productividad</li>
+                        <li class="education-card__list-item">SEO &amp; Content Marketing</li>
+                        <li class="education-card__list-item">Escritura Efectiva y Persuasiva</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Stack Tecnológico & Herramientas -->
+        <section class="section section--skills" aria-labelledby="skills-heading">
+            <div class="section__header">
+                <h2 id="skills-heading" class="section__title">Stack Tecnológico &amp; Herramientas</h2>
+                <div class="section__indicator"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Bloque 1: Análisis e Ingeniería de Datos -->
+                <div class="skills-card">
+                    <h3 class="skills-card__title">Análisis e Ingeniería de Datos (EDA)</h3>
+                    <ul class="skills-card__list">
+                        <li class="skills-card__item">Pandas</li>
+                        <li class="skills-card__item">NumPy</li>
+                        <li class="skills-card__item">Matplotlib</li>
+                        <li class="skills-card__item">Plotly</li>
+                        <li class="skills-card__item">Google Colab</li>
+                    </ul>
+                </div>
+
+                <!-- Bloque 2: Backend & Automatización -->
+                <div class="skills-card">
+                    <h3 class="skills-card__title">Backend &amp; Automatización</h3>
+                    <ul class="skills-card__list">
+                        <li class="skills-card__item">Python</li>
+                        <li class="skills-card__item">Django <small>(ASGI/Channels)</small></li>
+                        <li class="skills-card__item">Flask</li>
+                        <li class="skills-card__item">Java</li>
+                        <li class="skills-card__item">MySQL</li>
+                    </ul>
+                </div>
+
+                <!-- Bloque 3: Frontend & Maquetación -->
+                <div class="skills-card">
+                    <h3 class="skills-card__title">Frontend &amp; Maquetación</h3>
+                    <ul class="skills-card__list">
+                        <li class="skills-card__item">React</li>
+                        <li class="skills-card__item">Angular</li>
+                        <li class="skills-card__item">Vue</li>
+                        <li class="skills-card__item">JavaScript <small>(ES6+)</small></li>
+                        <li class="skills-card__item">CSS Puro <small>(Metodología BEM)</small></li>
+                    </ul>
+                </div>
+
+                <!-- Bloque 4: Entornos de Trabajo y Herramientas -->
+                <div class="skills-card">
+                    <h3 class="skills-card__title">Entornos de Trabajo Dominados</h3>
+                    <ul class="skills-card__list">
+                        <li class="skills-card__item">Visual Studio Code</li>
+                        <li class="skills-card__item">Sublime Text</li>
+                        <li class="skills-card__item">Google Colab</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bloque 5: Enfoque Metodológico -->
+            <div class="skills-card skills-card--highlight">
+                <h3 class="skills-card__title">Enfoque Metodológico</h3>
+                <ul class="skills-card__list">
+                    <li class="skills-card__item">Arquitecturas desacopladas basadas en eventos (WebSockets)
+                    </li>
+                    <li class="skills-card__item">Reglas de negocio con identificadores únicos (UUID)</li>
+                    <li class="skills-card__item">Simulación y monitoreo de variables de proceso de planta</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Sección: Proyectos Destacados -->
+        <section class="section section--projects" aria-labelledby="projects-heading">
+            <div class="section__header">
+                <h2 id="projects-heading" class="section__title">Proyectos Destacados &amp; Desarrollo Técnico</h2>
+                <div class="section__indicator"></div>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Proyecto 1: Panel Financiero Crypto -->
+                <div class="project-card project-card--highlight">
+                    <div class="project-card__header">
+                        <span class="project-card__tag">Destacado (IT/Arquitectura)</span>
+                        <h3 class="project-card__title">Panel Financiero Interactivo Crypto</h3>
+                    </div>
+                    <p class="project-card__description">
+                        Plataforma analítica de alta velocidad para criptomonedas. Implementa una Arquitectura
+                        Desacoplada y Basada en Eventos utilizando Django 6 (ASGI/Daphne) con capas de canales
+                        asincrónicas en el Backend, conectada mediante WebSockets estables a un Frontend modular en
+                        React 18 optimizado con CSS Puro y flujos de renderizado eficientes (useRef).
+                    </p>
+                    <a href="https://github.com/CppR-Repo/Panel_Financiero_Interactivo_Crypto" target="_blank"
+                        rel="noopener noreferrer" class="project-card__link">
+                        Ver Repositorio <span aria-hidden="true">&rarr;</span>
+                    </a>
+                </div>
+
+                <!-- Proyecto 2: Monitoreo Variables Industriales -->
+                <div class="project-card project-card--highlight-ind">
+                    <div class="project-card__header">
+                        <span class="project-card__tag project-card__tag--ind">Destacado (OT/Procesos)</span>
+                        <h3 class="project-card__title">Monitoreo Variables Industriales</h3>
+                    </div>
+                    <p class="project-card__description">
+                        Script automatizado en Python utilizando las librerías Pandas, NumPy y Matplotlib para simular,
+                        analizar y reportar el comportamiento de variables críticas de proceso (Presión y Temperatura)
+                        en una planta de operaciones industriales.
+                    </p>
+                    <a href="https://github.com/CppR-Repo/Monitoreo-Variables-Industriales" target="_blank"
+                        rel="noopener noreferrer" class="project-card__link">
+                        Ver Repositorio <span aria-hidden="true">&rarr;</span>
+                    </a>
+                </div>
+
+                <!-- Proyecto 3: Analisis Estadístico Quini 6 -->
+                <div class="project-card">
+                    <div class="project-card__header">
+                        <span class="project-card__tag">Data Science</span>
+                        <h3 class="project-card__title">Analisis Estadístico Quini 6</h3>
+                    </div>
+                    <p class="project-card__description">
+                        Software de analítica avanzada en Python optimizado para Google Colab y Jupyter Notebooks.
+                        Procesa el histórico de sorteos de la lotería "Quini 6" para identificar patrones, frecuencias,
+                        combinaciones consecutivas y paridades numéricas basándose en evidencia estadística.
+                    </p>
+                    <a href="https://github.com/CppR-Repo/Analisis_Estadistico_Quini6" target="_blank"
+                        rel="noopener noreferrer" class="project-card__link">
+                        Ver Repositorio <span aria-hidden="true">&rarr;</span>
+                    </a>
+                </div>
+
+                <!-- Proyecto 4: Proyecto Tienda Reparación -->
+                <div class="project-card">
+                    <div class="project-card__header">
+                        <span class="project-card__tag">Full Stack</span>
+                        <h3 class="project-card__title">Proyecto Tienda Reparación</h3>
+                    </div>
+                    <p class="project-card__description">
+                        Sistema ERP/CRM unificado y E-Commerce modular para taller de soporte técnico y venta de
+                        hardware. Desarrollado con Python (Flask), JS Moderno (ES6) y CSS3 Puro bajo un control estricto
+                        de reglas de negocio con IDs UUID.
+                    </p>
+                    <a href="https://github.com/CppR-Repo/Proyecto_Tienda_Reparacion" target="_blank"
+                        rel="noopener noreferrer" class="project-card__link">
+                        Ver Repositorio <span aria-hidden="true">&rarr;</span>
+                    </a>
+                </div>
+
+                <!-- Proyecto 5: Analisis Comercial -->
+                <div class="project-card">
+                    <div class="project-card__header">
+                        <span class="project-card__tag">Data Analytics &amp; Ventas</span>
+                        <h3 class="project-card__title">Analisis Comercial</h3>
+                    </div>
+                    <p class="project-card__description">
+                        Proyecto profesional de Ingeniería y Análisis de Datos (EDA) que unifica fuentes de Clientes,
+                        Ventas y Marketing. Implementa limpieza avanzada de datos, detección de duplicados, análisis de
+                        atribución por percentiles y un dashboard de ROI por producto en Python.
+                    </p>
+                    <a href="https://github.com/CppR-Repo/Analisis_Comercial" target="_blank" rel="noopener noreferrer"
+                        class="project-card__link">
+                        Ver Repositorio <span aria-hidden="true">&rarr;</span>
+                    </a>
+                </div>
+
+                <!-- Proyecto 6: Sistema Modular Autenticación -->
+                <div class="project-card">
+                    <div class="project-card__header">
+                        <span class="project-card__tag">Backend / Security</span>
+                        <h3 class="project-card__title">Sistema Modular Autenticación</h3>
+                    </div>
+                    <p class="project-card__description">
+                        Sistema Modular de Autenticación completo (Glassmorphism) con Django 6.1, HTML5, CSS3 nativo y
+                        JS (RegExp en tiempo real). Incluye recuperación criptográfica de claves, notificaciones,
+                        "Recordarme", OAuth integrado y SVG locales.
+                    </p>
+                    <a href="https://github.com/CppR-Repo/Sistema_Modular_Autenticacion" target="_blank"
+                        rel="noopener noreferrer" class="project-card__link">
+                        Ver Repositorio <span aria-hidden="true">&rarr;</span>
+                    </a>
+                </div>
+
+                <!-- Proyecto 7: Convertidor WebP y WebM -->
+                <div class="project-card">
+                    <div class="project-card__header">
+                        <span class="project-card__tag">Automation Script</span>
+                        <h3 class="project-card__title">Convertidor a WebP & WebM</h3>
+                    </div>
+                    <p class="project-card__description">
+                        Script en Python para optimizar portafolios web masivos o individuales convirtiendo imágenes a
+                        WebP y videos a WebM. Incluye redimensión responsiva inteligente, marcas de agua automáticas y
+                        control de calidad por software.
+                    </p>
+                    <a href="https://github.com/CppR-Repo/Convertidor_a_WebP-y-WebM" target="_blank"
+                        rel="noopener noreferrer" class="project-card__link">
+                        Ver Repositorio <span aria-hidden="true">&rarr;</span>
+                    </a>
+                </div>
+
+                <!-- Proyecto 8: Gestor de Tarea -->
+                <div class="project-card">
+                    <div class="project-card__header">
+                        <span class="project-card__tag">Frontend Vanilla</span>
+                        <h3 class="project-card__title">Gestor de Tarea</h3>
+                    </div>
+                    <p class="project-card__description">
+                        Aplicación web avanzada de gestión de tareas desarrollada con HTML5, CSS3 (Variables y
+                        Animaciones) y JavaScript Vanilla. Incluye consumo de API asíncrona, Modo Oscuro, barra de
+                        progreso y persistencia en LocalStorage.
+                    </p>
+                    <a href="https://github.com/CppR-Repo/Gestor_de_Tarea" target="_blank" rel="noopener noreferrer"
+                        class="project-card__link">
+                        Ver Repositorio <span aria-hidden="true">&rarr;</span>
+                    </a>
+                </div>
+
+                <!-- Proyecto 9: Galeria Menu Hamburguesa 11 -->
+                <div class="project-card">
+                    <div class="project-card__header">
+                        <span class="project-card__tag">UI / UX Desing</span>
+                        <h3 class="project-card__title">Galería de Menu Hamburguesa Interactivos</h3>
+                    </div>
+                    <p class="project-card__description">
+                        Galería interactiva y modular de 11 botones de menú hamburguesa diseñados con HTML, CSS y
+                        JavaScript nativo bajo metodología BEM. Reutilización avanzada de código con CSS Puro, SVG en
+                        línea y efectos elásticos 3D.
+                    </p>
+                    <a href="https://github.com/CppR-Repo/Galeria_Menu_Hamburguesa-Interactivos" target="_blank"
+                        rel="noopener noreferrer" class="project-card__link">
+                        Ver Repositorio <span aria-hidden="true">&rarr;</span>
+                    </a>
+                </div>
+
+                <!-- Proyecto 10: Galería Menu Hamburguesa 3 span -->
+                <div class="project-card">
+                    <div class="project-card__header">
+                        <span class="project-card__tag">UI / UX Desing</span>
+                        <h3 class="project-card__title">Galería de Menu Hamburguesa Interactivos con 3 span</h3>
+                    </div>
+                    <p class="project-card__description">
+                        Galería premium de 18 menús hamburguesa animados basados estrictamente en una estructura de 3
+                        spans con HTML, CSS y JS. Incluye modo oscuro/claro dinámico, reinicio global, diseño responsivo
+                        y botón "Volver arriba".
+                    </p>
+                    <a href="https://github.com/CppR-Repo/Galeria_Menu_Hamburguesa-Interactivos-3span" target="_blank"
+                        rel="noopener noreferrer" class="project-card__link link__print">
+                        Ver Repositorio <span aria-hidden="true">&rarr;</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Final del CV -->
+        <footer class="footer">
+            <div class="footer__content">
+                <!-- Tu Logo dedicado para el Footer -->
+                <img src="icons/CppR-Programmer-footer.svg" alt="Logo CppR-Programmer Footer" class="footer__logo-img">
+                <p class="footer__text">
+                    &copy; <span id="footer-year">2026</span> · Cristian Pablo Portillo Rios. Todos los derechos
+                    reservados.
+                </p>
+                <p class="footer__subtext">Diseñado con CSS Puro (Metodología BEM) &amp; HTML5 Nativo.</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Script de Interactividad (Separado en su carpeta correspondiente) -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,4 @@
+# Configuaciones locales de desarrollo (Ignorar siempre)
+.vscode/
+.DS_Store
+Thumbs.db
