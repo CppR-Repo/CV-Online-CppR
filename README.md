@@ -58,4 +58,4 @@ mi-cv/
 ## 🚀 Despliegue en Producción
 
 El proyecto se encuentra desplegado de forma continua en producción y puede visitarse en vivo a través del siguiente enlace:
-🔗 **[cv-online.cppr-programmer](https://cppr-repo.github.io/CV_Online/)**
+🔗 **[cv-online.cppr-programmer](https://cppr-repo.github.io/CV-Online-CppR/)**
