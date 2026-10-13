@@ -551,13 +551,6 @@ html[data-theme="light"] .icon--black {
         gap: 1.5rem;
         padding: 1.5rem;
     }
-
-    .about-card__badge {
-        border-left: none;
-        border-top: 4px solid var(--color-industry);
-        border-radius: 4px 4px 12px 12px;
-        padding: 1.25rem;
-    }
 }
 
 /* ==========================================================================
