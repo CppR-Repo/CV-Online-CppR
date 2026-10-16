@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://cppr-repo.github.io/CV-Online-CppR/sitemap.xml

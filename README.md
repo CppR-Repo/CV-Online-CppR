@@ -36,7 +36,8 @@ mi-cv/
 │   │   └── cv-cristian-portillo.pdf
 │   └── img/
 │       ├── perfil.webp
-│       └── og-image.webp
+│       ├── og-image.webp
+│       └── og-image.jpg
 ├── css/
 │   ├── reset.css
 │   ├── fonts.css
@@ -57,7 +58,9 @@ mi-cv/
 │   └── main.js
 ├── index.html
 ├── README.md
-└── .gitignore
+├── .gitignore
+├── robots.txt
+└── sitemap.xml
 ```
 
 ---
