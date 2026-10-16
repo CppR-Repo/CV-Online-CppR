@@ -31,26 +31,33 @@ Este proyecto fue construido desde cero utilizando **tecnologías web nativas y 
 
 ```text
 mi-cv/
-│
-├── index.html              # Maquetación estructural y semántica principal
-├── README.md               # Documentación técnica del repositorio
-├── .gitignore              # Exclusión de archivos locales (.vscode, etc.)
-│
-├── css/
-│   ├── fonts.css           # Carga local de tipografías Inter (.woff2)
-│   ├── reset.css           # Reseteo de estilos globales del navegador
-│   ├── styles.css          # Variables de tema, componentes BEM y Responsive
-│   └── print.css           # Reglas de renderizado para papel/impresión A4
-│
-├── js/
-│   └── main.js             # Lógica e interactividad del Tema y Scroll UX
-│
 ├── assets/
-│   ├── img/                # Fotos de perfil (perfil.webp y og-perfil.webp)
-│   └── cv/                 # Archivo ejecutable final (cv-cristian-portillo.pdf)
-│
-├── favicons/               # Manifiesto y assets multi-resolución del Favicon
-└── icons/                  # Repositorio de iconos vectoriales (.svg)
+│   ├── cv/
+│   │   └── cv-cristian-portillo.pdf
+│   └── img/
+│       ├── perfil.webp
+│       └── og-image.webp
+├── css/
+│   ├── reset.css
+│   ├── fonts.css
+│   ├── styles.css
+│   └── print.css
+├── fonts/
+│   └── inter/
+│       └── *.woff2
+├── favicons/
+│   ├── apple-touch-icon.png
+│   ├── favicon-32x32.png
+│   ├── favicon-16x16.png
+│   ├── favicon.ico
+│   └── site.webmanifest
+├── icons/
+│   └── *.svg
+├── js/
+│   └── main.js
+├── index.html
+├── README.md
+└── .gitignore
 ```
 
 ---
