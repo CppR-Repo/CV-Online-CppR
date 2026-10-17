@@ -42,7 +42,7 @@ html[data-theme="light"] {
 }
 
 body {
-    background-color: #ffffff !important;    /* Forzamos a que el body sea blanco puro */
+    background-color: var(--bg-primary);    /* Forzamos a que el body sea blanco puro */
     color: var(--text-primary);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -163,9 +163,6 @@ html[data-theme="light"] .cv-container {
     transform: translateY(0);
 }
 
-.cv-container {
-    margin-top: 4.5rem !important;
-}
 
 /* --- Adaptación Responsive (Móviles) --- */
 @media (max-width: 480px) {
@@ -176,10 +173,6 @@ html[data-theme="light"] .cv-container {
 
     .global-controls__title {
         font-size: 1rem;
-    }
-
-    .cv-container {
-        margin-top: 5.5rem !important;
     }
 
     /* En móviles ocultamos el texto 'PDF' para mantenerlo compacto y estético */
@@ -301,6 +294,7 @@ html[data-theme="light"] .icon--black {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    min-width: 0;
 }
 
 .header__name {
@@ -315,6 +309,7 @@ html[data-theme="light"] .icon--black {
     font-size: 1.15rem;
     font-weight: 500;
     color: var(--color-brand);
+    overflow-wrap: anywhere;
 }
 
 .header__tagline {
@@ -418,13 +413,11 @@ html[data-theme="light"] .icon--black {
 }
 
 .section__title {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: 700;
     letter-spacing: -0.01em;
     color: var(--text-primary);
     text-transform: uppercase;
-    font-size: 1.3rem;
-    /* Tamaño técnico balanceado */
 }
 
 /* Línea indicadora debajo del título de sección */
@@ -996,7 +989,6 @@ ADAPTACIÓN RESPONSIVE DE LAS SKILLS
 /* --- Ajuste responsive para celulares --- */
 @media (max-width: 480px) {
     .footer {
-        margin-bottom: 5rem;
-        /* Deja un espacio extra abajo en celulares para que los botones flotantes no tapen el texto */
+        margin-bottom: 5rem;  /* Deja un espacio extra abajo en celulares para que los botones flotantes no tapen el texto */
     }
 }
